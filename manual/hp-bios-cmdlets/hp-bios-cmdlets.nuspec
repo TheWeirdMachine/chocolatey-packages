@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hp-bios-cmdlets</id>
+    <title>HP BIOS Cmdlets for Windows PowerShell</title>
+    <version>1.0.0.0</version>
+    <authors>Hewlett Packard Enterprise</authors>
+    <owners>Sebastian Werner</owners>
+    <summary>HP BIOS Cmdlets for Windows PowerShell</summary>
+    <description>The HP BIOS Cmdlets for Windows PowerShell provides a set of utilities that allow users to manage servers BIOS using PowerShell. It is designed for IT experts with experience in PowerShell scripting and configuring HP ProLiant server hardware. 
+    </description>
+    <projectUrl>http://www.hp.com/go/powershell</projectUrl>
+    <docsUrl>http://h17007.www1.hp.com/us/en/enterprise/servers/solutions/info-library/index.aspx?cat=scripting_tools_powershell#.U6OAv3ZpdV0</docsUrl>
+    <tags>HP BIOS PowerShell</tags>
+    <copyright>© 2015 Hewlett-Packard Development Company, L.P.</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/fiveninezero/chocolatey-packages/master/icons/hp-bios-cmdlets.png</iconUrl>
+    <releaseNotes>Version: 1.0.0.0 (26 Jun 2015)</releaseNotes>
+  </metadata>
+</package>
