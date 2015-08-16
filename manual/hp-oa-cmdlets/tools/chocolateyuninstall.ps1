@@ -4,10 +4,10 @@
 
 $ErrorActionPreference = 'Stop'; # stop on all errors
 
-$packageName = 'hp-bios-cmdlets'
+$packageName = 'hp-oa-cmdlets'
 # registry uninstaller key name is the key that is found at HKLM:\Software\Windows\CurrentVersion\Uninstall\ THE NAME
-$registryUninstallerKeyName = '{8777A9D0-65CB-414D-9B0E-1BD60D339F23}' #ensure this is the value in the registry
-$msiProductCodeGuid = '{8777A9D0-65CB-414D-9B0E-1BD60D339F23}'
+$registryUninstallerKeyName = '{FEA3D3B6-EF5C-4287-A5F0-4A089970C52F}' #ensure this is the value in the registry
+$msiProductCodeGuid = '{FEA3D3B6-EF5C-4287-A5F0-4A089970C52F}'
 $shouldUninstall = $true
 
 $local_key     = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\$registryUninstallerKeyName"
