@@ -33,8 +33,8 @@ try {
     
     Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file	
 	
-    Write-ChocolateySuccess "$packageName"
 } catch {
-    Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
     throw
 }
+
+Remove-Item $filePath\* -recurse -force -exclude .exe
