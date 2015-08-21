@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>enpass</id>
+    <title>Enpass Passwort Manager</title>
+    <version>4.6.1</version>
+    <authors>Sinew Software Systems</authors>
+    <owners>Sebastian Werner</owners>
+    <summary>Enpass Passwort Manager</summary>
+    <description>Enpass takes care of all your life important credentials and online accounts in safe and best way. All your data is secured offline on your device. We do not store any of your data on our server. Enpass encrypts your data by AES 256 bit Encryption using open-source encryption engine SQLCipher to ensure maximum security with trust.
+    </description>
+    <projectUrl>http://enpass.io/</projectUrl>
+    <packageSourceUrl>https://github.com/fiveninezero/chocolatey-packages</packageSourceUrl>
+    <docsUrl>http://enpass.io/support/</docsUrl>
+    <tags>password safe</tags>
+    <copyright>Copyright © Sinew Software Systems</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/fiveninezero/chocolatey-packages/master/icons/enpass.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>Release Date June 5, 2015
+1. WebDAV/ownCloud connection bug fixed.
+2. Other minor bug fixes.</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
