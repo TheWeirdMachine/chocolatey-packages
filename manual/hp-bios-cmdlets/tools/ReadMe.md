@@ -1,2 +1,0 @@
-﻿## HP BIOS Cmdlets for Windows PowerShell
-The HP BIOS Cmdlets for Windows PowerShell provides a set of utilities that allow users to manage server BIOS using PowerShell. It is designed for IT experts with experience in PowerShell scripting and configuring HP ProLiant server hardware.
