@@ -6,7 +6,7 @@ $ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName = 'enpass' # arbitrary name for the package, used in messages
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'http://dl.sinew.in/windows/setup/EnpassSetup-4.6.1.exe' # download url
+$url = 'http://dl.sinew.in/windows/setup/EnpassSetup-5.0.0.exe' # download url
 $url64 = $url # 64bit URL here or remove - if installer is both, use $url
 
 $packageArgs = @{
