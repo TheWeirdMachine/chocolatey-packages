@@ -22,9 +22,11 @@
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>Release Date June 5, 2015
-1. WebDAV/ownCloud connection bug fixed.
-2. Other minor bug fixes.</releaseNotes>
+    <releaseNotes>Release Date Oct 5, 2015
+1. Proxy Configuration is now supported.
+2. WebDav/ownCloud synchronization improved.
+3. Crashing issues in Windows XP due to DLLs are now fixed.
+4. Other minor bug fixes and improvements.</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
