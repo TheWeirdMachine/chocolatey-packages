@@ -1,8 +1,4 @@
-﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
-# REMOVE ANYTHING BELOW THAT IS NOT NEEDED
-
-$ErrorActionPreference = 'Stop'; # stop on all errors
-
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName = 'hp-bios-cmdlets' # arbitrary name for the package, used in messages
 $url = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p2008826436/v118922/HPBIOSCmdlets-x86.exe'
