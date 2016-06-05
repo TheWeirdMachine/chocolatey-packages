@@ -1,8 +1,4 @@
-﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
-# REMOVE ANYTHING BELOW THAT IS NOT NEEDED
-
-$ErrorActionPreference = 'Stop'; # stop on all errors
-
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName = 'hp-oa-cmdlets' # arbitrary name for the package, used in messages
 $url = 'http://whp-aus2.cold.extweb.hp.com/pub/softlib2/software1/pubsw-windows/p157797746/v107380/HPOACmdlets-x86.exe'
