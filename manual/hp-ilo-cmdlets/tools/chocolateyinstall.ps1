@@ -1,8 +1,4 @@
-﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
-# REMOVE ANYTHING BELOW THAT IS NOT NEEDED
-
-$ErrorActionPreference = 'Stop'; # stop on all errors
-
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName = 'hp-ilo-cmdlets' # arbitrary name for the package, used in messages
 $url = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p1086382174/v116993/HPiLOCmdlets-x86.exe'
