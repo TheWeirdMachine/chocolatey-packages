@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName = 'hp-ilo-cmdlets' # arbitrary name for the package, used in messages
-$url = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p1086382174/v116993/HPiLOCmdlets-x86.exe'
-$url64 = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p2102165468/v116992/HPiLOCmdlets-x64.exe'
+$url = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p1086382174/v120166/HPiLOCmdlets-x86.exe'
+$url64 = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p2102165468/v120167/HPiLOCmdlets-x64.exe'
 $fileType = 'msi'
 $silentArgs = '/quiet'
 $filePath = "$env:TEMP\chocolatey\$packageName"
