@@ -14,17 +14,13 @@ try {
     }
 
     Get-ChocolateyWebFile $packageName $fileFullPath $url $url64
-	
 	Add-Type -assembly "system.io.compression.filesystem"
 	[io.compression.zipfile]::ExtractToDirectory($fileFullPath, $filePath)
 
-    $processor = Get-WmiObject Win32_Processor
-    $is64bit = $processor.AddressWidth -eq 64
-
-	if ($is64bit) {
-	$file = "$filePath\HPBIOSCmdlets-x64.msi"
+    if (Get-ProcessorBits 64) {
+	    $file = "$filePath\HPBIOSCmdlets-x64.msi"
 	} else {
-	$file = "$filePath\HPBIOSCmdlets-x86.msi"
+	    $file = "$filePath\HPBIOSCmdlets-x86.msi"
 	}
     
     Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file	
@@ -33,4 +29,6 @@ try {
     throw
 }
 
-Remove-Item $filePath\* -recurse -force -exclude .exe
+if (Test-Path $filePath) {
+    Remove-Item $filePath\* -recurse -force -exclude .exe
+}
