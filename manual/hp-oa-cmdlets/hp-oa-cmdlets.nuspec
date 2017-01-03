@@ -4,15 +4,16 @@
   <metadata>
     <id>hp-oa-cmdlets</id>
     <title>HP Onboard Administrator Cmdlets for Windows PowerShell</title>
-    <version>1.1.0.3</version>
+    <version>1.1.0.701</version>
     <authors>Hewlett Packard Enterprise</authors>
     <owners>Sebastian Werner</owners>
     <summary>HP Onboard Administrator Cmdlets for Windows PowerShell</summary>
-    <description>The HP Onboard Administrator(OA) Cmdlets for Windows PowerShell provides a set of utilities that allow users to manage OA devices using PowerShell. It is designed for IT experts with experience in PowerShell scripting and configuring HP ProLiant server hardware.
+    <description>Scripting Tools for Windows PowerShell : OA Cmdlets create an interface to HPE Onboard Administrator(OA). These cmdlets can be used to get and set OA settings in HPE BladeSystem c3000 and c7000 Enclosures.
     </description>
     <projectUrl>http://www.hp.com/go/powershell</projectUrl>
+    <packageSourceUrl>https://github.com/TheWeirdMachine/chocolatey-packages</packageSourceUrl>
     <docsUrl>http://h17007.www1.hp.com/us/en/enterprise/servers/solutions/info-library/index.aspx?cat=scripting_tools_powershell#.U6OAv3ZpdV0</docsUrl>
-    <tags>HP OA PowerShell</tags>
+    <tags>HP OA PowerShell admin</tags>
     <copyright>© 2015 Hewlett-Packard Development Company, L.P.</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/fiveninezero/chocolatey-packages/master/icons/hp-oa-cmdlets.png</iconUrl>
