@@ -1,34 +1,24 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
-$packageName = 'hp-ilo-cmdlets' # arbitrary name for the package, used in messages
-$url = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p1086382174/v120166/HPiLOCmdlets-x86.exe'
-$url64 = 'http://ftp.hp.com/pub/softlib2/software1/pubsw-windows/p2102165468/v120167/HPiLOCmdlets-x64.exe'
+$packageName = 'hp-ilo-cmdlets'
+$url = 'https://downloads.hpe.com/pub/softlib2/software1/pubsw-windows/p1086382174/v123974/HPiLOCmdlets-x86.exe'
+$url64 = 'https://downloads.hpe.com/pub/softlib2/software1/pubsw-windows/p2102165468/v123973/HPiLOCmdlets-x64.exe'
+$checksum = '3E73A1C4ABF3287030378A71959EACDEA70DFA67E1438883E26E82567C4813C5'
+$checksum64 = '5234469C71412E02F8BDCC297D32AE10EBE498A8812451CF4C233C50F7AF9DD1'
+$checksumType = 'sha256'
+$checksumType64 = 'sha256'
 $fileType = 'msi'
 $silentArgs = '/quiet'
-$filePath = "$env:TEMP\chocolatey\$packageName"
-$fileFullPath = "$filePath\$packageName_Install.exe"
+$dlPkg = "$packageName" + ".exe"
+$ValidExitCodes = '0'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-try {
-    if (-not (Test-Path $filePath)) {
-        New-Item -ItemType directory -Path $filePath
-    }
-
-    Get-ChocolateyWebFile $packageName $fileFullPath $url $url64
-	Add-Type -assembly "system.io.compression.filesystem"
-	[io.compression.zipfile]::ExtractToDirectory($fileFullPath, $filePath)
-
-    if (Get-ProcessorBits 64) {
-	    $file = "$filePath\HPILOCmdlets-x64.msi"
-	} else {
-	    $file = "$filePath\HPILOCmdlets-x86.msi"
-	}
-    
-    Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file	
-	
-} catch {
-    throw
+if (Get-ProcessorBits 64) {
+    $file = "HPILOCmdlets-x64.msi"
+} else {
+    $file = "HPILOCmdlets-x86.msi"
 }
 
-if (Test-Path $filePath) {
-    Remove-Item $filePath\* -recurse -force -exclude .exe
-}
+Get-ChocolateyWebFile -PackageName $packageName -FileFullPath "$toolsDir\$dlPkg" -Url $url -Url64 $url64 -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType64
+Get-ChocolateyUnzip -FileFullPath "$toolsDir\$dlPkg" -Destination $toolsDir 
+Install-ChocolateyInstallPackage $packageName $fileType $silentArgs "$toolsDir\$file" -ValidExitCodes $ValidExitCodes
