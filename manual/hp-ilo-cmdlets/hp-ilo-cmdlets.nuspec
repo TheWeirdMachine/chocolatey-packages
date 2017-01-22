@@ -4,7 +4,7 @@
   <metadata>
     <id>hp-ilo-cmdlets</id>
     <title>HP iLO Cmdlets for Windows PowerShell</title>
-    <version>1.4.0.0</version>
+    <version>1.4.0.1</version>
     <authors>Hewlett Packard Enterprise</authors>
     <owners>Sebastian Werner</owners>
     <summary>HP iLO Cmdlets for Windows PowerShell</summary>
@@ -15,6 +15,6 @@
     <docsUrl>http://h17007.www1.hp.com/us/en/enterprise/servers/solutions/info-library/index.aspx?cat=scripting_tools_powershell#.U6OAv3ZpdV0</docsUrl>
     <tags>HP iLO PowerShell admin</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/fiveninezero/chocolatey-packages/master/icons/hp-oa-cmdlets.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/TheWeirdMachine/chocolatey-packages/4acdca8e/icons/hp-ilo-cmdlets.png</iconUrl>
   </metadata>
 </package>

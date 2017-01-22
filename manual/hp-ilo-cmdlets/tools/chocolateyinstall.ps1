@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName = 'hp-ilo-cmdlets'
-$url = 'https://downloads.hpe.com/pub/softlib2/software1/pubsw-windows/p1086382174/v123974/HPiLOCmdlets-x86.exe'
-$url64 = 'https://downloads.hpe.com/pub/softlib2/software1/pubsw-windows/p2102165468/v123973/HPiLOCmdlets-x64.exe'
-$checksum = '3E73A1C4ABF3287030378A71959EACDEA70DFA67E1438883E26E82567C4813C5'
-$checksum64 = '5234469C71412E02F8BDCC297D32AE10EBE498A8812451CF4C233C50F7AF9DD1'
+$url = 'https://downloads.hpe.com/pub/softlib2/software1/pubsw-windows/p1086382174/v125609/HPiLOCmdlets-x86.exe'
+$url64 = 'https://downloads.hpe.com/pub/softlib2/software1/pubsw-windows/p2102165468/v125608/HPiLOCmdlets-x64.exe'
+$checksum = '40C4DA14B9B32165E74A3B79A222912185092C2C47E13AECF83645FABC6A2D76'
+$checksum64 = '6C1B707E19C9A2A7B44F304CB82FD540ED1780CF56031615A222FB89EB0ED2A7'
 $checksumType = 'sha256'
 $checksumType64 = 'sha256'
 $fileType = 'msi'
